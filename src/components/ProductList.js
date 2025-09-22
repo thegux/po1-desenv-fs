@@ -8,15 +8,17 @@ const ProductList = ({ products }) => {
   };
 
   return (
-    <div>
-      {products.map(product => (
-        <div key={product.id}>
-          <h2>{product.name}</h2>
-          <button onClick={() => addToCart(product)}>Add to Cart</button>
-        </div>
-      ))}
+    <div className="productListPage">
+      <h1>Lista de Produtos</h1>
+      <div className="productList">
+        {products.map(product => (
+          <div className="productItem" key={product.id}>
+            <h2>{product.name}</h2>
+            <button onClick={() => addToCart(product)}>Add to Cart</button>
+          </div>
+        ))}
+      </div>
     </div>
-
   );
 
 };

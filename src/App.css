@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  background-color: #222;
+  padding: 12px 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header nav {
   display: flex;
-  flex-direction: column;
+  gap: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+header nav a:hover {
+  color: #ffcc00;
+}
+
+.productListPage h1{
+    margin: 1rem; 
+}
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.productItem {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.productItem:hover {
+  transform: translateY(-4px);
+}
+
+.productItem h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.productItem button {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.productItem button:hover {
+  background-color: #005fa3;
+}
+
+.cart {
+  padding: 20px;
+}
+
+.cart h1 {
+  margin-bottom: 1rem;
+}
+
+.cart div {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #fff;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.cart span {
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart button {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+.cart button:hover {
+  background-color: #b32d37;
 }

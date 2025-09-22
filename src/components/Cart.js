@@ -9,8 +9,9 @@ const Cart = () => {
   };
 
   return (
-    <div>
-      <h2>Your Cart</h2>
+    <div className="cart">
+      <h1>Seu carrinho</h1>
+      {cart.length === 0 && <p>Carrinho Vazio</p>}
       {cart.map(item => (
         <div key={item.id}>
           <span>{item.name}</span>

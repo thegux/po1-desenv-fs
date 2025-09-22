@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import ProductList from './components/ProductList';
 import Cart from './components/Cart';
+import styles from './App.css';
 
 const products = [
   { id: 1, name: 'Book 1' },
@@ -14,7 +15,7 @@ const App = () => {
       <header>
         <nav style={{ display: 'flex', gap: 12 }}>
           <Link to="/">Home</Link>
-          <Link to="/cart">Cart</Link>
+          <Link to="/cart">Carrinho</Link>
         </nav>
       </header>
 
