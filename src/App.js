@@ -14,7 +14,7 @@ const App = () => {
     <Router>
       <header>
         <nav style={{ display: 'flex', gap: 12 }}>
-          <Link to="/">Home</Link>
+          <Link to="/">Página Inicial</Link>
           <Link to="/cart">Carrinho</Link>
         </nav>
       </header>

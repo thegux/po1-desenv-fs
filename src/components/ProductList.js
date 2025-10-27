@@ -14,7 +14,7 @@ const ProductList = ({ products }) => {
         {products.map(product => (
           <div className="productItem" key={product.id}>
             <h2>{product.name}</h2>
-            <button onClick={() => addToCart(product)}>Add to Cart</button>
+            <button onClick={() => addToCart(product)}>Adicionar ao carrinho</button>
           </div>
         ))}
       </div>
