@@ -99,7 +99,6 @@ header nav a:hover {
 }
 
 .cart button {
-  background-color: #e63946;
   color: #fff;
   border: none;
   padding: 6px 12px;
@@ -109,6 +108,18 @@ header nav a:hover {
   transition: background-color 0.2s ease;
 }
 
-.cart button:hover {
+.cart button.control {
+  background-color: #005fa3;
+}
+
+.cart button.control:hover {
+  background-color: #0077cc;
+}
+
+.cart button.remove {
+  background-color: #e63946;
+}
+
+.cart button.remove:hover {
   background-color: #b32d37;
 }
