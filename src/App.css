@@ -104,22 +104,48 @@ header nav a:hover {
   padding: 6px 12px;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 1rem;
   transition: background-color 0.2s ease;
+  font-weight: 600;
+  
 }
 
 .cart button.control {
-  background-color: #005fa3;
+  background-color: #004377;
 }
 
 .cart button.control:hover {
-  background-color: #0077cc;
+  background-color: #005da8;
 }
 
 .cart button.remove {
-  background-color: #e63946;
+  background-color: #9b1c27;
 }
 
 .cart button.remove:hover {
-  background-color: #b32d37;
+  background-color: #7a141f;
+}
+
+.notification,
+.cart-notification {
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: lightgray;
+  margin: 20px 0;
+}
+
+.notification {
+  color: #0a0;
+  margin: 20px;
+}
+
+.cart-notification {
+  color: #006400;
+  width: 100%;
+
+}
+
+.notification:empty, .cart-notification:empty {
+  display: none;
 }
